@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+	<%- include ../partials/head %>
+	<link rel="stylesheet" href="stylesheets/contact.css">
+	</head>
+<body>
+<header>
+<%- include ../partials/header %>
+</header>
+
+	<div class="container" >
+	<h1>Contact Us with Adoption Queries!</h1>
+	<h3>The information provided by you on this form is retricted for internal use only and is not shared with any other third-party.
+	</h3><br>
+
+	<form class="well form-horizontal" action="/contactus" method="POST" id="myform">
+	
+	<fieldset>
+	
+	<legend >Personal Information</legend>
+	
+	<div class="form-group">
+	<label class="col-md-4 control-label">First Name*</label>
+	<div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	<input name="fname" placeholder="First Name" class="form-control"  type="text">
+	</div></div></div>
+	
+	<div class="form-group">
+	<label class="col-md-4 control-label">Last Name*</label>
+	<div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	<input name="lname" placeholder="Last Name" class="form-control"  type="text">
+	</div></div></div>
+  
+  	</fieldset>
+	
+	<fieldset>
+	<div class="form-group">
+	<label class="col-md-4 control-label">Email*</label>
+	<div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	<input name="email" placeholder="Email Address" class="form-control"  type="email">
+	</div></div></div>
+	</fieldset>
+	
+	<fieldset>
+	<legend>Description of Query</legend>
+	<div class="form-group">
+	<label class="col-md-4 control-label">Subject*</label>
+	<div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+	<input name="subject" placeholder="Subject" class="form-control"  type="text">
+	</div></div></div>
+	
+	<div class="form-group">
+	<label class="col-md-4 control-label">Message*</label>
+	<div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+	<textarea name="message" maxlength="250" placeholder="Describe your message here..." class="form-control"  type="text"></textarea>
+	</div></div></div>
+	</fieldset>
+	
+	<div id="submit" class="form-group">
+	<label class="col-md-4 control-label"></label>
+	<div class="col-md-4">
+    <button type="submit" class="btn btn-info" >Submit <span class="glyphicon glyphicon-send"></span></button>
+	</div>
+	</div>
+	</form>
+
+</div>
+
+
+<footer>
+	<%- include ../partials/footer %>
+	</footer>
+
+
+</body>
+
+</html>

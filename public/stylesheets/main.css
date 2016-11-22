@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1
+{
+	font-family: 'Lobster', cursive;
+	color: rgb(11,43,119);
+
+}
+
+.jumbo h4,p{
+
+	display: inline;
+
+}
+body {
+	text-align: center;
+	background: url("../images/bg1.png");
+}
+.col-md-4
+{
+	margin-bottom: 5%;
+
+}
